@@ -6,7 +6,7 @@ Frontend часть разработана на React + Vite с адаптивн
 
 ## Demo
 
-🌐 Live Demo: https://mangashop-f.vercel.app
+🌐 Live Demo:(https://manga-shop-frontend-main.vercel.app/)
 
 ## GitHub Repository
 

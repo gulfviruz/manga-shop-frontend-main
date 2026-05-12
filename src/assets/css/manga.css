@@ -1,0 +1,328 @@
+.home__heading {
+  color: var(--h1-home);
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-family: "Rubik Mono One", monospace;
+}
+
+.manga-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 40px 25px;
+}
+
+.manga-card {
+  background: var(--bg-manga);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.manga-card:hover {
+  transform: translateY(-5px);
+}
+
+.manga-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.manga-info {
+  padding: 16px;
+}
+
+.manga-title {
+  font-size: 17.6px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.manga-price {
+  color: var(--fav-btn-bg);
+  font-weight: bold;
+}
+
+.manga-container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-page {
+  display: flex;
+  gap: 32px;
+  margin: 32px 0;
+  background: var(--bg-gradient);
+  padding: 20px 20px;
+  border-radius: 10px;
+  width: 900px;
+}
+
+.detail-cover {
+  width: 343px;
+  height: 416px;
+}
+
+.detail-cover img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.detail-info h1 {
+  color: var(--text);
+}
+
+.detail-info p {
+  color: var(--text);
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  padding: 16px 0;
+}
+
+.buy-btn {
+  padding: 10px;
+  background: var(--accent);
+  color: var(--cta-text);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.buy-btn:hover {
+  background: var(--accent-hover);
+}
+
+.fav-btn {
+  background: var(--fav-btn-bg);
+  border: none;
+  color: var(--text);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fav-btn:hover {
+  background: #dd69ce;
+}
+
+.fav-btn:active {
+  background: #d43dc0;
+}
+
+.promo-banner {
+  margin: 40px 0;
+  padding: 40px 20px;
+  border-radius: 24px;
+  text-align: center;
+  background: var(--bg-auth);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promo-banner h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.catalog-button {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.catalog-button a {
+  padding: 14px 30px;
+  background: #7f5af0;
+  color: white;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.catalog-button a:hover {
+  transform: translateY(-3px);
+}
+
+.reviews-section {
+  margin: 80px 0;
+}
+
+.review__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  padding: 25px;
+  border-radius: 20px;
+  background: var(--bg-auth);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.review-card span {
+  font-weight: bold;
+  color: var(--text);
+}
+
+.delivery-section {
+  margin: 80px 0;
+}
+
+.delivery-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.delivery-card {
+  padding: 25px;
+  border-radius: 20px;
+  background: var(--bg-auth);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-card:hover {
+  transform: translateY(-5px);
+}
+
+.delivery-card h3 {
+  color: var(--text);
+  text-align: center;
+}
+.delivery-card p {
+  margin-top: 12px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.contact-section {
+  margin: 80px auto;
+  padding: 40px 20px;
+  border-radius: 24px;
+  text-align: center;
+  background: var(--bg-auth);
+  backdrop-filter: blur(10px);
+  max-width: 550px;
+  width: 100%;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact-form input {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus {
+  transform: scale(1.02);
+}
+
+.contact-button {
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  background: var(--accent);
+  color: #fff;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.error-msg {
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.success-msg {
+  color: #2cb67d;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .manga-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .manga-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-page {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .manga-grid {
+    grid-template-columns: 1fr;
+  }
+}

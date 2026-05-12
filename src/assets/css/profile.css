@@ -1,0 +1,136 @@
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 180px);
+}
+
+.notfound {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--text);
+}
+
+.notfound__h1 {
+  color: var(--text);
+}
+
+.profile-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  color: var(--text);
+}
+
+.profile-info {
+  grid-column: span 2;
+  padding: 20px;
+  border: 1px solid var(--particle);
+  border-radius: 12px;
+  background: var(--bg-auth);
+}
+
+.profile-info p {
+  margin-top: 13px;
+  display: flex;
+}
+
+.profile-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.prof-favorites_title {
+  margin-top: 20px;
+  color: var(--cart-text);
+}
+
+.fav-btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.remove-btn {
+  background: var(--accent);
+  cursor: pointer;
+  padding: 10px 10px;
+  color: var(--cta-text);
+  border: none;
+  border-radius: 10px;
+}
+
+.favorite-btn {
+  background: var(--accent);
+  cursor: pointer;
+  padding: 10px 10px;
+  color: var(--cta-text);
+  border: none;
+  border-radius: 10px;
+}
+
+.remove-btn:hover,
+.favorite-btn:hover {
+  background: var(--accent-hover);
+}
+
+.favclear-btn {
+  background: var(--accent);
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--cta-text);
+  border: none;
+  border-radius: 10px;
+}
+
+.favclear-btn {
+  background: var(--accent-hover);
+  color: var(--cta-text);
+  margin-top: 20px;
+}
+
+.favorite-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px;
+  background: var(--bg-auth);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.order-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: var(--bg-auth);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.order-loading {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    grid-template-columns: 1fr;
+  }
+}
